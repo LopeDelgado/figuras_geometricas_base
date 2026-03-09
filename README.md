@@ -2,10 +2,19 @@
 
 Integrantes:
 -Pablo Ruiz
--Jose Luis Medina
--Jose Adorna
--Lope Delgado
+
+
 -David Barba
+
+
+-Jose Luis Medina
+
+
+-Jose Adorna
+
+
+-Lope Delgado
+
 
 En esta tarea hemos realizado las clases Punto, Círculo, Triángulo y Cuadrado basandonos en el diagrama de clases que nos entrego el profesor en el que la clase padre FiguraGeometrica ya estaba creada.
 Posteriormente hemos hecho las pruebas unitarias de cada clase.
