@@ -9,6 +9,12 @@ public class Punto {
         this.x = x;
         this.y = y;
     }
+    
+    //Constructor vacío
+    public Punto() {
+        this.x = 0;
+        this.y = 0;
+    }
 
     // Métodos getters
     public double getX() {
@@ -33,6 +39,12 @@ public class Punto {
         double dx = this.x - otro.getX();
         double dy = this.y - otro.getY();
         return Math.sqrt(dx * dx + dy * dy);
+    }
+    
+    // Método para trasladar el punto
+    public void trasladar(double dx, double dy) {
+        this.x = this.x + dx;
+        this.y = this.y + dy;
     }
 }
 

@@ -2,7 +2,7 @@ package com.endes.figuras;
 
 public class Cuadrado extends FiguraGeometrica {
 	double lado;
-	Punto esquina;
+	private Punto esquina;
 	
 	public Cuadrado(String nombre, String color, double lado, Punto esquina) {
 		super(nombre, color);

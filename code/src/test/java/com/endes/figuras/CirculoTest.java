@@ -30,10 +30,12 @@ private Circulo circ;
 	
 	@Test
 	void testTrasladar() {
-		Punto p = new Punto(0, 0);
-		Punto resultadoEsperado = circ.transladar(0, 0); 
-		double resultado = circ.transladar(0, 0);
-		assertEquals(resultadoEsperado, resultado);
+	    // Trasladar el círculo
+	    circ.trasladar(2, 3); // El círculo se traslada por (2, 3)
+
+	    // Verificar las nuevas coordenadas del centro del círculo
+	    assertEquals(3.0, circ.getCentro().getX(), 0.0001); // El centro debe moverse a (3, 4)
+	    assertEquals(4.0, circ.getCentro().getY(), 0.0001);
 	}
 
 }

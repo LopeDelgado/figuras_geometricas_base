@@ -2,12 +2,16 @@ package com.endes.figuras;
 
 public class Circulo extends FiguraGeometrica {
 	double radio;
-	Punto centro;
+	private Punto centro;
 
 public Circulo (String nombre, String color, double radio, Punto centro) {
 	super(nombre, color);
 	this.radio = radio; 
 	this.centro = centro;
+}
+
+public Punto getCentro() {
+	return centro;
 }
 
 public double perimetro() {
@@ -21,7 +25,8 @@ public void rotar(double angulo) {
 //	centro.rotar(angulo);
 }
 
-public void transladar(double dx, double dy) {
-	centro.transladar(dx, dy);
+@Override
+public void trasladar(double dx, double dy) {
+    centro.trasladar(dx, dy);
 }
 }
